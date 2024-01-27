@@ -7,6 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="back_card_view">#540CD1EA</color>
-    <color name="status_bar">#5CE8FA</color>
+    <color name="back_card_view">#610BB9CF</color>
+    <color name="status_bar">#0C57B1</color>
 </resources>

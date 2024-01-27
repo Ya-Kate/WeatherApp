@@ -8,5 +8,9 @@
     <string name="_10_5">10°С/-5°С</string>
     <string name="hours">hours</string>
     <string name="days">days</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="monday_14_12_24">Monday 14/12/24</string>
+
+
 
 </resources>

@@ -9,20 +9,20 @@
     tools:context=".ui.MainFragment">
 
     <ImageView
-        android:id="@+id/image_view_back"
+        android:id="@+id/imageViewBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="3dp"
         android:alpha="0.7"
         android:scaleType="fitXY"
-        android:src="@drawable/weather2"
+        android:src="@drawable/weatherapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/view_pager"
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp8"
@@ -40,7 +40,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tv_data"
+                android:id="@+id/data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dp15"
@@ -52,18 +52,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/image_weather"
-                android:layout_width="@dimen/dp40"
-                android:layout_height="@dimen/dp40"
-                android:layout_marginTop="@dimen/dp15"
-                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/imageWeather"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
                 android:src="@android:drawable/btn_star"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/tv_country"
+                android:id="@+id/tvCountry"
                 style="@style/bg_tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,10 +72,10 @@
                 android:textSize="@dimen/sp24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_weather" />
+                app:layout_constraintTop_toBottomOf="@+id/imageWeather" />
 
             <TextView
-                android:id="@+id/tv_city"
+                android:id="@+id/tvCity"
                 style="@style/bg_tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,10 +84,10 @@
                 android:textSize="@dimen/sp24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_country" />
+                app:layout_constraintTop_toBottomOf="@+id/tvCountry" />
 
             <TextView
-                android:id="@+id/tv_temp"
+                android:id="@+id/tvTemp"
                 style="@style/bg_tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,10 +97,10 @@
                 android:textSize="@dimen/sp60"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_city" />
+                app:layout_constraintTop_toBottomOf="@+id/tvCity" />
 
             <TextView
-                android:id="@+id/tv_condition"
+                android:id="@+id/tvCondition"
                 style="@style/bg_tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,10 +110,10 @@
                 android:textSize="@dimen/sp18"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_temp" />
+                app:layout_constraintTop_toBottomOf="@+id/tvTemp" />
 
             <TextView
-                android:id="@+id/tv_max_min_temp"
+                android:id="@+id/tvMaxMinTemp"
                 style="@style/bg_tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,10 +123,10 @@
                 android:textSize="@dimen/sp18"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_condition" />
+                app:layout_constraintTop_toBottomOf="@+id/tvCondition" />
 
             <ImageButton
-                android:id="@+id/image_search"
+                android:id="@+id/imageSearch"
                 android:layout_width="@dimen/dp48"
                 android:layout_height="@dimen/dp48"
                 android:layout_marginStart="@dimen/dp15"
@@ -136,10 +136,10 @@
                 android:src="@drawable/ic_search_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_max_min_temp" />
+                app:layout_constraintTop_toBottomOf="@+id/tvMaxMinTemp" />
 
             <ImageButton
-                android:id="@+id/image_sync"
+                android:id="@+id/location"
                 android:layout_width="@dimen/dp48"
                 android:layout_height="@dimen/dp48"
                 android:layout_marginEnd="@dimen/dp15"
@@ -149,7 +149,7 @@
                 android:src="@drawable/ic_cloud_sync_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_max_min_temp" />
+                app:layout_constraintTop_toBottomOf="@+id/tvMaxMinTemp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -161,32 +161,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp8"
         android:background="@color/back_card_view"
-        app:layout_constraintEnd_toEndOf="@+id/view_pager"
-        app:layout_constraintStart_toStartOf="@+id/view_pager"
-        app:layout_constraintTop_toBottomOf="@+id/view_pager"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="@+id/viewPager"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
         app:tabMode="fixed">
 
-<!--                <com.google.android.material.tabs.TabItem-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="@string/hours" />-->
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hours" />
 
-<!--                <com.google.android.material.tabs.TabItem-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="@string/days" />-->
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_page"
+        android:id="@+id/viewPage"
         android:layout_width="@dimen/dp0"
         android:layout_height="@dimen/dp0"
         android:layout_marginTop="@dimen/dp8"
         android:layout_marginBottom="@dimen/dp8"
-
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/view_pager"
-        app:layout_constraintStart_toStartOf="@+id/view_pager"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="@+id/viewPager"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

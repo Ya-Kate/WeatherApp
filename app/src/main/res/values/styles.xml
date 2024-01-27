@@ -7,4 +7,10 @@
         <item name="android:shadowDx">4</item>
         <item name="android:shadowRadius">4</item>
     </style>
+
+    <style name="tab_text">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#666262</item>
+    </style>
+
 </resources>
