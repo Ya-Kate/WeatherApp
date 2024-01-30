@@ -9,5 +9,4 @@ class MainViewModel : ViewModel() {
     val liveDataCurrent = MutableLiveData<DataDay>()
     val liveDataList = MutableLiveData<List<DataDay>>()
 
-
 }

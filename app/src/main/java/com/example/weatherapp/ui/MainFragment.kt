@@ -90,7 +90,7 @@ class MainFragment : Fragment() {
         }
 
         binding.imageSearch.setOnClickListener {
-            DialogManager.searchLocationDialog(requireContext(), object:DialogManager.Listener{
+            DialogManager.searchLocationDialog(requireContext(), object : DialogManager.Listener {
                 override fun onClock(city: String?) {
                     if (city != null) {
                         getUrlWeather(city)
@@ -107,7 +107,7 @@ class MainFragment : Fragment() {
         } else {
             DialogManager.locationSettingDialog(requireContext(), object :
                 DialogManager.Listener {
-                override fun onClock(name:String?) {
+                override fun onClock(name: String?) {
                     startActivity(Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS))
                 }
             })
@@ -122,10 +122,6 @@ class MainFragment : Fragment() {
     }
 
     private fun getLocation() {
-//        if (!isLocationEnabled()) {
-//            Toast.makeText(requireContext(), "Location disabled!", Toast.LENGTH_LONG).show()
-//            return
-//        }
         val ct = CancellationTokenSource()
         if (ActivityCompat.checkSelfPermission(
                 requireContext(),
@@ -258,8 +254,4 @@ class MainFragment : Fragment() {
         Log.d("myLog", "maxT: ${weatherItem.maxTemp}")
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance() = MainFragment()
-    }
 }
